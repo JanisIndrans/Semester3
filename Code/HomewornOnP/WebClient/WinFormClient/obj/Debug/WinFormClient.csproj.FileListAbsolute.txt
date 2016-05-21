@@ -1,0 +1,43 @@
+S:\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\bin\Debug\WinFormClient.exe.config
+S:\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\bin\Debug\WinFormClient.exe
+S:\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\bin\Debug\WinFormClient.pdb
+S:\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.Properties.Resources.resources
+S:\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.csproj.GenerateResource.Cache
+S:\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.exe
+S:\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.pdb
+C:\Users\Coms\Desktop\3 Sem\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\bin\Debug\WinFormClient.exe.config
+C:\Users\Coms\Desktop\3 Sem\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\bin\Debug\WinFormClient.exe
+C:\Users\Coms\Desktop\3 Sem\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\bin\Debug\WinFormClient.pdb
+C:\Users\Coms\Desktop\3 Sem\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.Properties.Resources.resources
+C:\Users\Coms\Desktop\3 Sem\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.csproj.GenerateResource.Cache
+C:\Users\Coms\Desktop\3 Sem\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.exe
+C:\Users\Coms\Desktop\3 Sem\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.pdb
+S:\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.Form1.resources
+C:\Users\Nikita\Desktop\Project 3 semester\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\bin\Debug\WinFormClient.exe.config
+C:\Users\Nikita\Desktop\Project 3 semester\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.exe
+C:\Users\Nikita\Desktop\Project 3 semester\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.pdb
+C:\Users\Nikita\Desktop\Project 3 semester\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.csprojResolveAssemblyReference.cache
+C:\Users\Nikita\Desktop\Project 3 semester\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.Form1.resources
+C:\Users\Nikita\Desktop\Project 3 semester\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.Properties.Resources.resources
+C:\Users\Nikita\Desktop\Project 3 semester\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.csproj.GenerateResource.Cache
+C:\Users\Nikita\Desktop\Project 3 semester\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\bin\Debug\WinFormClient.exe
+C:\Users\Nikita\Desktop\Project 3 semester\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\bin\Debug\WinFormClient.pdb
+C:\Users\Janix\Desktop\My projects\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\bin\Debug\WinFormClient.exe.config
+C:\Users\Janix\Desktop\My projects\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.exe
+C:\Users\Janix\Desktop\My projects\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.pdb
+C:\Users\Janix\Desktop\My projects\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\bin\Debug\WinFormClient.exe
+C:\Users\Janix\Desktop\My projects\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\bin\Debug\WinFormClient.pdb
+C:\Users\Janix\Desktop\My projects\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.Form1.resources
+C:\Users\Janix\Desktop\My projects\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.Properties.Resources.resources
+C:\Users\Janix\Desktop\My projects\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.csproj.GenerateResource.Cache
+C:\Users\Coms\Desktop\3 Sem\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.Form1.resources
+C:\Users\Coms\Desktop\3 Sem\dmai0914_Sem3_Gr1\Programming\WebClient\WinFormClient\obj\Debug\WinFormClient.csprojResolveAssemblyReference.cache
+C:\Users\Janix\Desktop\dmai0914_Sem3_Gr1-master (1)\dmai0914_Sem3_Gr1-master\Code\HomewornOnP\WebClient\WinFormClient\bin\Debug\WinFormClient.exe.config
+C:\Users\Janix\Desktop\dmai0914_Sem3_Gr1-master (1)\dmai0914_Sem3_Gr1-master\Code\HomewornOnP\WebClient\WinFormClient\obj\Debug\WinFormClient.exe
+C:\Users\Janix\Desktop\dmai0914_Sem3_Gr1-master (1)\dmai0914_Sem3_Gr1-master\Code\HomewornOnP\WebClient\WinFormClient\obj\Debug\WinFormClient.pdb
+C:\Users\Janix\Desktop\dmai0914_Sem3_Gr1-master (1)\dmai0914_Sem3_Gr1-master\Code\HomewornOnP\WebClient\WinFormClient\bin\Debug\WinFormClient.exe
+C:\Users\Janix\Desktop\dmai0914_Sem3_Gr1-master (1)\dmai0914_Sem3_Gr1-master\Code\HomewornOnP\WebClient\WinFormClient\bin\Debug\WinFormClient.pdb
+C:\Users\Janix\Desktop\dmai0914_Sem3_Gr1-master (1)\dmai0914_Sem3_Gr1-master\Code\HomewornOnP\WebClient\WinFormClient\obj\Debug\WinFormClient.csprojResolveAssemblyReference.cache
+C:\Users\Janix\Desktop\dmai0914_Sem3_Gr1-master (1)\dmai0914_Sem3_Gr1-master\Code\HomewornOnP\WebClient\WinFormClient\obj\Debug\WinFormClient.Form1.resources
+C:\Users\Janix\Desktop\dmai0914_Sem3_Gr1-master (1)\dmai0914_Sem3_Gr1-master\Code\HomewornOnP\WebClient\WinFormClient\obj\Debug\WinFormClient.Properties.Resources.resources
+C:\Users\Janix\Desktop\dmai0914_Sem3_Gr1-master (1)\dmai0914_Sem3_Gr1-master\Code\HomewornOnP\WebClient\WinFormClient\obj\Debug\WinFormClient.csproj.GenerateResource.Cache

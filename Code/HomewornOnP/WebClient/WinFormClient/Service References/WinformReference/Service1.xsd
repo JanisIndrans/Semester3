@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfService.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfService.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:64435/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="Person">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserType" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Person" nillable="true" type="tns:Person" />
+  <xs:complexType name="Child">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Person">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Grade" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Child" nillable="true" type="tns:Child" />
+  <xs:complexType name="Teacher">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Person">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Subject" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Teacher" nillable="true" type="tns:Teacher" />
+  <xs:complexType name="ArrayOfTeacher">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Teacher" nillable="true" type="tns:Teacher" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTeacher" nillable="true" type="tns:ArrayOfTeacher" />
+  <xs:complexType name="ListForObjects">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Asl" nillable="true" type="q1:ArrayOfanyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListForObjects" nillable="true" type="tns:ListForObjects" />
+  <xs:complexType name="ArrayOfHomework">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Homework" nillable="true" type="tns:Homework" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHomework" nillable="true" type="tns:ArrayOfHomework" />
+  <xs:complexType name="Homework">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Assignment" nillable="true" type="tns:Assignment" />
+      <xs:element minOccurs="0" name="Child" nillable="true" type="tns:Person" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DiskName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Homework" nillable="true" type="tns:Homework" />
+  <xs:complexType name="Assignment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="deadline" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="exercise" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="subject" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="teacher" nillable="true" type="tns:Teacher" />
+      <xs:element minOccurs="0" name="title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Assignment" nillable="true" type="tns:Assignment" />
+  <xs:complexType name="ArrayOfAssignment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Assignment" nillable="true" type="tns:Assignment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAssignment" nillable="true" type="tns:ArrayOfAssignment" />
+  <xs:complexType name="TutoringTime">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Child" nillable="true" type="tns:Child" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Teacher" nillable="true" type="tns:Teacher" />
+      <xs:element minOccurs="0" name="Time" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TutoringTime" nillable="true" type="tns:TutoringTime" />
+  <xs:complexType name="ArrayOfTutoringTime">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TutoringTime" nillable="true" type="tns:TutoringTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTutoringTime" nillable="true" type="tns:ArrayOfTutoringTime" />
+</xs:schema>

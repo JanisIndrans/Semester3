@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:64435/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:64435/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:64435/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfService.Model" />
+      <xsd:import schemaLocation="http://localhost:64435/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllTeachers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllTeachers" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllTeachers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllTeachersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SubmitHomework_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitHomework" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SubmitHomework_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitHomeworkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateAssignment_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAssignment" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateAssignment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAssignmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllHomeworksById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllHomeworksById" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllHomeworksById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllHomeworksByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllHomeworksByChildId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllHomeworksByChildId" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllHomeworksByChildId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllHomeworksByChildIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllAssignmentsForTeacherById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllAssignmentsForTeacherById" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllAssignmentsForTeacherById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllAssignmentsForTeacherByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllAssignments_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllAssignments" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllAssignments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllAssignmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetHomeworkById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHomeworkById" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetHomeworkById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHomeworkByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateTutoringTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateTutoringTime" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateTutoringTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateTutoringTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTtTimesByTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTtTimesByTime" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTtTimesByTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTtTimesByTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTtTimesByTeacherId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTtTimesByTeacherId" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTtTimesByTeacherId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTtTimesByTeacherIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTtTimesByDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTtTimesByDate" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTtTimesByDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTtTimesByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RemoveTutoringTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveTutoringTime" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RemoveTutoringTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveTutoringTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RegisterBooking_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterBooking" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RegisterBooking_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterBookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetHashedPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHashedPassword" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetHashedPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHashedPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllAvailableTutoringTimes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllAvailableTutoringTimes" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllAvailableTutoringTimes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllAvailableTutoringTimesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllAvailableTutoringTimesBySubject_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllAvailableTutoringTimesBySubject" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllAvailableTutoringTimesBySubject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllAvailableTutoringTimesBySubjectResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Login" message="tns:IService1_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/LoginResponse" message="tns:IService1_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTeachers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllTeachers" message="tns:IService1_GetAllTeachers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllTeachersResponse" message="tns:IService1_GetAllTeachers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitHomework">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SubmitHomework" message="tns:IService1_SubmitHomework_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SubmitHomeworkResponse" message="tns:IService1_SubmitHomework_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAssignment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CreateAssignment" message="tns:IService1_CreateAssignment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CreateAssignmentResponse" message="tns:IService1_CreateAssignment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllHomeworksById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllHomeworksById" message="tns:IService1_GetAllHomeworksById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllHomeworksByIdResponse" message="tns:IService1_GetAllHomeworksById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllHomeworksByChildId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllHomeworksByChildId" message="tns:IService1_GetAllHomeworksByChildId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllHomeworksByChildIdResponse" message="tns:IService1_GetAllHomeworksByChildId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAssignmentsForTeacherById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllAssignmentsForTeacherById" message="tns:IService1_GetAllAssignmentsForTeacherById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllAssignmentsForTeacherByIdResponse" message="tns:IService1_GetAllAssignmentsForTeacherById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAssignments">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllAssignments" message="tns:IService1_GetAllAssignments_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllAssignmentsResponse" message="tns:IService1_GetAllAssignments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHomeworkById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetHomeworkById" message="tns:IService1_GetHomeworkById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetHomeworkByIdResponse" message="tns:IService1_GetHomeworkById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateTutoringTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CreateTutoringTime" message="tns:IService1_CreateTutoringTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CreateTutoringTimeResponse" message="tns:IService1_CreateTutoringTime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTtTimesByTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetTtTimesByTime" message="tns:IService1_GetTtTimesByTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetTtTimesByTimeResponse" message="tns:IService1_GetTtTimesByTime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTtTimesByTeacherId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetTtTimesByTeacherId" message="tns:IService1_GetTtTimesByTeacherId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetTtTimesByTeacherIdResponse" message="tns:IService1_GetTtTimesByTeacherId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTtTimesByDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetTtTimesByDate" message="tns:IService1_GetTtTimesByDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetTtTimesByDateResponse" message="tns:IService1_GetTtTimesByDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveTutoringTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RemoveTutoringTime" message="tns:IService1_RemoveTutoringTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RemoveTutoringTimeResponse" message="tns:IService1_RemoveTutoringTime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterBooking">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RegisterBooking" message="tns:IService1_RegisterBooking_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RegisterBookingResponse" message="tns:IService1_RegisterBooking_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHashedPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetHashedPassword" message="tns:IService1_GetHashedPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetHashedPasswordResponse" message="tns:IService1_GetHashedPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAvailableTutoringTimes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllAvailableTutoringTimes" message="tns:IService1_GetAllAvailableTutoringTimes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllAvailableTutoringTimesResponse" message="tns:IService1_GetAllAvailableTutoringTimes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAvailableTutoringTimesBySubject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllAvailableTutoringTimesBySubject" message="tns:IService1_GetAllAvailableTutoringTimesBySubject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllAvailableTutoringTimesBySubjectResponse" message="tns:IService1_GetAllAvailableTutoringTimesBySubject_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IService1/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTeachers">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllTeachers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitHomework">
+      <soap:operation soapAction="http://tempuri.org/IService1/SubmitHomework" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAssignment">
+      <soap:operation soapAction="http://tempuri.org/IService1/CreateAssignment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllHomeworksById">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllHomeworksById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllHomeworksByChildId">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllHomeworksByChildId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAssignmentsForTeacherById">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllAssignmentsForTeacherById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAssignments">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllAssignments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHomeworkById">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetHomeworkById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTutoringTime">
+      <soap:operation soapAction="http://tempuri.org/IService1/CreateTutoringTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTtTimesByTime">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetTtTimesByTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTtTimesByTeacherId">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetTtTimesByTeacherId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTtTimesByDate">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetTtTimesByDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveTutoringTime">
+      <soap:operation soapAction="http://tempuri.org/IService1/RemoveTutoringTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterBooking">
+      <soap:operation soapAction="http://tempuri.org/IService1/RegisterBooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHashedPassword">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetHashedPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAvailableTutoringTimes">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllAvailableTutoringTimes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAvailableTutoringTimesBySubject">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllAvailableTutoringTimesBySubject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:64435/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
